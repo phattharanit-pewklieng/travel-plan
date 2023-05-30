@@ -9,10 +9,7 @@ const Footer = () => {
       <p>© 2023 Phattharanit. All rights reserved. </p>
 
       <p className="right-paragraph">
-        <BsArrowUpSquare />
-    
-        <MdModeOfTravel />
-        <SiFacebook />
+        <BsArrowUpSquare /> <MdModeOfTravel /> <SiFacebook />
       </p>
     </div>
   );
