@@ -1,17 +1,15 @@
-
-
 const Ask = () => {
-
-  
-
   return (
     <>
-      <div>
-        <h1>Search :</h1>
+      <div className="box">
+        <h1>Ask me :</h1>
+        <form>
         <input placeholder="Ask me ?" />
-      </div>
-      <div className='output-anwser'>
+        <button type="submit">Submit</button>
 
+        </form>
+
+        <div className="output-anwser"></div>
       </div>
     </>
   )
