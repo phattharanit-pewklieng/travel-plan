@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+.box-budget {
+  text-align: center;
+  margin: 30px 50px;
+  padding-bottom: 15px;
+}
+
+.box-budget h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.box-budget img {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.box-2 {
+  margin: 3px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-sm {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  background-color: #58677b;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .col-sm:hover {
+  background-color: #3a589a;
+  color: #d8dfd9;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.box-budget h3 {
+  color: #83b7ea;
+  /* text-shadow: 0.5px 0.5px #83f0bc; */
+}
+
+.box-budget p {
+  color: #a4a478;
+  text-shadow: 0.5px 0.5px #000;
+}
+
+/* add esp form */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display: block; /* Display inputs on a new line */
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.container {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #2e3e53;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 45%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+
+.center button {
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #367ab9;
+  border-radius: 3px;
+  border: none;
+}
+
+.center button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+.exp-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+ 
+}
+
+.-button {
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.-button:hover {
+  color: red;
+}

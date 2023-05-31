@@ -1,8 +1,5 @@
-import React from 'react'
-import { MdQuestionAnswer } from 'react-icons/md'
-import { Link, Outlet } from 'react-router-dom'
 
-const Nav = () => {
+const Header = () => {
   return (
     <>
       <div className="nav">
@@ -18,4 +15,4 @@ const Nav = () => {
   )
 }
 
-export default Nav
+export default Header
