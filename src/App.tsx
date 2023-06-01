@@ -1,4 +1,5 @@
 import './App.css'
+import './components/home.css'
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -48,7 +49,7 @@ const Root = () => {
   return (
     <>
       <div className="banner">
-        <img src="/logo_2.png" alt="logo" />
+      <img src="/logo_01.png" alt="logo" />
         <h1>Travel-Plan</h1>
         <div className="menu-toggle" onClick={toggleMenu}>
           <span></span>

@@ -20,10 +20,7 @@ const ExpenseItem = (props) => {
           <span className="-button" onClick={handleDeleteExpense}>
             <TiDelete size="1.5em" />
           </span>
-        
-          
             {props.name} ${props.cost}
-          
         </li>
       </ul>
     </div>

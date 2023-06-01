@@ -1,0 +1,59 @@
+.box-plan {
+  background-color: #d5f4e6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.box-plan:hover {
+  background-color: #b3e8cc;
+  transform: scale(1.05);
+}
+
+.box-plan h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.box-plan h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.box-plan h3,
+.box-plan h4 {
+  color: #555;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.box-plan p,
+.box-plan li {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.box-plan a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.box-plan a:hover {
+  text-decoration: underline;
+}
+
+.box-plan .photo-1 {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.content {
+  margin-top: 20px;
+}

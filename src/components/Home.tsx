@@ -4,7 +4,10 @@ const Home = () => {
   return (
     <>
       <div className="box">
-        <h1>What next ... ?</h1>
+     
+      <h1>What next ... ?</h1>
+  
+      
         <div>
           <div className="gallery">
             <a
@@ -66,7 +69,8 @@ const Home = () => {
             <div className="desc">New Zealand</div>
           </div>
         </div>
-      </div>
+        </div>
+      
     </>
   )
 }

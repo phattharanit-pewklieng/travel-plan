@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("https://images.unsplash.com/photo-1685362926801-d97120f56465?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,7 +33,7 @@
   display: flex;
   align-items: center;
   height: 90px;
-  background-color: #f2f2f2;
+  background-color: #fff;
   padding: 30px;
 
 }
@@ -76,6 +83,7 @@ h3{
 
 
 .footer {
+  position: absolute;
   background: #747c6b;
   padding-left: 20px;
   padding-right: 20px;
@@ -88,10 +96,8 @@ h3{
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
-  margin-top: 20px; /* Add margin-top to create space */
+  z-index: 9999; 
 }
-
 
 .footer p {
   margin: 0;
@@ -110,7 +116,7 @@ h3{
 }
 
 .navbar {
-  background-color: #f2f2f2;
+  background-color: #fff;
   padding: 10px;
 }
 
@@ -181,13 +187,41 @@ h3{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.5); /* Glass-like background color */
+  
+}
+
+.box-plan h1 {
+  color: #333;
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+
+.box-plan h2 {
+  color: #333;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.box-plan h3,
+.box-plan h4 {
+  color: #555;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.box-plan p,
+.box-plan li {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .content {
   text-align: left;
   padding-left: 6rem;
   padding:5rem;
+  background-color: #fff;
+  opacity: .7;
 }
 
 .box-plan img{
@@ -200,4 +234,4 @@ h3{
   padding: 5px;
 }
 
-
+/* end plan */
