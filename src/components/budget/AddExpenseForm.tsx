@@ -27,7 +27,7 @@ const AddExpenseForm = () => {
   return (
     <>
       <div>
-     
+        <h1>Add Expense</h1>
         <div className="container">
           <form onSubmit={onSubmit}>
             <div className="center">

@@ -5,8 +5,10 @@ const TodoList = () => {
   return (
     
     <>
-    <div>TodoList</div>
+    <div className='main-box'>
+      <h1>TodoList</h1>
     <Todo/>
+      </div>
     </>
   )
 }

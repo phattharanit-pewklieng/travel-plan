@@ -1,15 +1,15 @@
-.box-plan {
+/* .box-plan {
   background-color: #d5f4e6;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
-}
+} */
 
-.box-plan:hover {
+/* .box-plan:hover {
   background-color: #b3e8cc;
   transform: scale(1.05);
-}
+} */
 
 .box-plan h1 {
   color: #333;

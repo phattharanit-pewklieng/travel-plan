@@ -3,7 +3,7 @@
 export const Plan = () => {
   return (
     <>
-      <div className="box-plan">
+      <div className="main-box">
         <div className="content">
       <h1>Plan :</h1>
         <img

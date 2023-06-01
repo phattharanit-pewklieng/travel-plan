@@ -3,12 +3,9 @@ import './home.css'
 const Home = () => {
   return (
     <>
-      <div className="box">
-     
+      <div className="main-box">
       <h1>What next ... ?</h1>
-  
-      
-        <div>
+       
           <div className="gallery">
             <a
               target="_blank"
@@ -69,7 +66,7 @@ const Home = () => {
             <div className="desc">New Zealand</div>
           </div>
         </div>
-        </div>
+       
       
     </>
   )
