@@ -12,53 +12,28 @@ body {
 }
 
 
-.banner {
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-  display: flex;
-  align-items: center;
-  height: 90px;
-  background-color: #fff;
-  margin: 30px 30px 0px 30px;
 
-}
 
-.banner img {
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  height: 80px;
-  margin: 40px 10px 20px 20px ;
-}
-
-.banner h1 {
-  flex-grow: 1;
-  text-align: center;
-  margin: 0;
-  color: #000;
-}
-
-.menu-toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 24px;
-  cursor: pointer;
-  margin: 30px 50px 20px 20px ;
-}
-
+/* h1 h2 h3 */
 h1{
-  margin-top: 50px;
+  margin-top: 30px;
   text-shadow: 0.5px 0.5px #000;
 }
 
 h2{
   color: #8f7649;
+  margin: 20px 0;
   /* text-shadow: 0.5px 0.5px #000; */
 }
 
 h3{
   color:#a4a478;
+  margin: 10px 0;
   /* text-shadow: 0.5px 0.5px #000; */
+}
+
+li{
+  margin: 10px 0;
 }
 
 .main-box {
@@ -68,6 +43,7 @@ h3{
   background-color: #fff;
   opacity: .7;
   margin: 0px 30px 0px 30px;
+  
 }
 
 
@@ -84,7 +60,7 @@ h3{
   align-items: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin: 0px 30px 30px 30px;
+  margin: 0px 30px 0 30px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -100,106 +76,118 @@ h3{
 }
 /* footer end */
 
+
+/* plan img */
 .photo-1 {
   width: 400px;
   height: 500px;
   object-fit: cover;
+  padding: 30px;
+}
+
+/* header nav */
+li {
+  list-style: none;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+
 }
 
 .navbar {
   display: flex;
-  /* width: 30%; */
-  padding-left: 3rem;
-  background-color: #fff;
-  margin: 0px 30px 0px 30px;
-  padding: 1rem 0 0 3rem ;
-}
-
-.navbar a:hover {
-  background-color: #ddd;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.menu-toggle span {
-  width: 24px;
-  height: 5px;
-  background-color: #000;
-}
-
-.menu {
-  display: none;
-  list-style: none;
-}
-
-.menu li {
-  margin-bottom: 1.5rem;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: #000;
-}
-
-.menu.open {
-  display: block;
-}
-
-/* .center{
-  text-align: center;
-} */
-
-/* plan */
-.box-plan {
-  display: inline;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  
-}
-
-.box-plan h1 {
-  color: #333;
-  font-size: 29px;
-  margin-bottom: 10px;
-}
-
-.box-plan h2 {
-  color: #333;
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-
-.box-plan h3,
-.box-plan h4 {
-  color: #555;
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-.box-plan p,
-.box-plan li {
-  color: #555;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.content {
-  text-align: left;
-  padding-left: 6rem;
-  padding:5rem;
+  padding: 1rem 1.5rem;
   background-color: #fff;
-  opacity: .7;
+  margin: 30px 30px 0px 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 }
 
-.box-plan img{
-  margin: 20px;
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 5px;
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
-/* end plan */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 2rem; /* Decreased margin for better spacing */
+}
+
+.nav-link {
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: #475569;
+  text-decoration: none; /* Added to remove default underline */
+  transition: color 0.3s ease-in-out; /* Added smooth transition effect */
+}
+
+.nav-link:hover {
+  color: #92cfee;
+  background-color: #367ab9;
+  width: 30px;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 300;
+  color: #3a589a;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    padding: 1rem 0; /* Added padding for better spacing */
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1rem 0; /* Decreased margin for better spacing */
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+/* end header nav */

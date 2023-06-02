@@ -3,9 +3,13 @@
 }
 
 .box-budget {
+  width: 90%;
   text-align: center;
-  margin: 30px 50px;
   padding-bottom: 15px;
+  display: inline-block;
+  margin: 0px 30px 0px 30px;
+ opacity: .8;
+  background-color: #fff;
 }
 
 .box-budget h1 {
@@ -37,12 +41,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* .col-sm:hover {
-  background-color: #3a589a;
-  color: #d8dfd9;
-  border-radius: 5px;
-  cursor: pointer;
-} */
+
 
 .box-budget h3 {
   color: #83b7ea;
@@ -80,30 +79,34 @@ input[type="submit"] {
   float: right;
 }
 
-
+/* add exp */
 .container {
-  width: 100%;
+  width: 70%;
   border-radius: 5px;
   background-color: #2e3e53;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 45%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
+  
 }
 
 .center{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
+.col-25 {
+  color: #ccc;
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  
+  float: left;
+  width: 45%;
+  margin-top: 6px;
+}
+
 
 
 .center button {
@@ -113,6 +116,7 @@ input[type="submit"] {
   background-color: #367ab9;
   border-radius: 3px;
   border: none;
+  color: #ccc;
 }
 
 .center button:hover {
@@ -143,7 +147,7 @@ li {
 }
 
 .-button {
-  color: white;
+  color: #3a589a;
   padding: 5px;
   border-radius: 50%;
   cursor: pointer;

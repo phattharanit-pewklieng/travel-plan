@@ -1,10 +1,4 @@
 
-import { useState } from 'react'
-import PropTypes from 'prop-types'
-// import dotenv from 'dotenv';
-// dotenv.config();
-
-
 const Ask = () => {
  
 
