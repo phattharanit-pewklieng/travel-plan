@@ -15,6 +15,7 @@ import Ask from './components/Ask'
 import BudgetTracker from './components/budget/TrackerBudget'
 import TodoList from './components/todos/TodoList'
 import { useState } from 'react'
+import SearchBar from './components/SearchBar'
 // import Header from './components/Header'
 
 function App() {
@@ -52,6 +53,12 @@ const Root = () => {
     setIsMenuOpen(false)
   }
 
+  const handleSearch = (searchTerm: string) => {
+    // Perform your search operation here
+    // You can send the search term to a server, query a database, or implement any other search functionality
+    console.log('Search term:', searchTerm);
+  };
+
   return (
     <>
  
@@ -61,6 +68,7 @@ const Root = () => {
             <img src="/logo_01.png" alt="logo" width="80px" height="80px" />
             {/* <h1>Travel-Plan</h1> */}
         
+            <SearchBar onSearch={handleSearch}/>
 
           <div
             className={`hamburger ${isMenuOpen ? 'active' : ''}`}

@@ -1,8 +1,14 @@
+
 import './home.css'
 
 const Home = () => {
+const handleSearch = (searchTerm: string)=>{
+  console.log("Search term:", searchTerm)
+}
+
   return (
     <>
+      
       <div className="main-box">
       <h1>What next ... ?</h1>
        
