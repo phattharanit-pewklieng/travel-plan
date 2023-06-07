@@ -1,5 +1,6 @@
 import ThreeD from './3d/ThreeDImage'
 import './home.css'
+import AucklandSlider from './slider/AucklandSlider'
 
 const Home = () => {
   const handleSearch = (searchTerm: string) => {
@@ -11,7 +12,7 @@ const Home = () => {
       <div className="main-box">
         <h1>What next ... ?</h1>
         <div>
-
+        <AucklandSlider />
         <h1>Pad Thai Chicken and Prawn</h1>
         <ThreeD />
 
