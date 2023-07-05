@@ -64,7 +64,7 @@ const TodoList: React.FC = () => {
 
   return (
     <>
-      <div className="main-box">
+      <div className="main-box plan-box">
       <div className="todo-list">
         <h1>TodoList</h1>
         {todos.map((todo, index) => (
@@ -78,7 +78,7 @@ const TodoList: React.FC = () => {
         ))}
         <form onSubmit={handleSubmit}>
           <input type="text" name="todoText" placeholder="Add new task" />
-          <button type="submit">Add</button>
+          <button className='addButton' type="submit">Add</button>
         </form>
       </div>
       </div>

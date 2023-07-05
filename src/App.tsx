@@ -27,15 +27,15 @@ function App() {
         <Route path="/ask" element={<Ask />} />
         <Route path="/budget" element={<BudgetTracker />} />
         <Route path="/todos" element={<TodoList />} />
-      </Route>
+      </Route> 
     )
   )
   return (
     <>
       <div className="App">
         <RouterProvider router={router} />
-        <Footer />
-      </div>
+
+    </div>
      
     </>
   )
@@ -110,9 +110,9 @@ const Root = () => {
         </nav>
       </header>
       <div>
-        <Outlet />
-       
-      </div> 
+          <Outlet />
+      </div>
+      <Footer />
     </>
   )
 }

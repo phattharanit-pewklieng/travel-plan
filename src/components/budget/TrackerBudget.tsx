@@ -10,7 +10,7 @@ const BudgetTracker = () => {
   return (
     <>
       <AppProvider>
-        <div className="box-budget">
+        <div className="box-budget plan-box">
           <div>
             <h1>My Budget Planner</h1>
 
@@ -33,16 +33,18 @@ const BudgetTracker = () => {
               <ExpenseTotal />
             </div>
           </div>
-          <h1 style={{color:'#53b7ea' , textDecoration:'underline'}}>Add Expense</h1>
+          <h1 style={{ color: '#53b7ea', textDecoration: 'underline' }}>
+            Add Expense
+          </h1>
           <div className="box">
             <div className="col-xl">
-              <ExpenseList />
+              <AddExpenseForm />
             </div>
           </div>
 
           <div className="box">
             <div className="col-xl">
-              <AddExpenseForm />
+              <ExpenseList />
             </div>
           </div>
         </div>

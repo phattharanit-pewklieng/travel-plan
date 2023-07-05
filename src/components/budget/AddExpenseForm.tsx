@@ -3,27 +3,36 @@ import { AppContext } from '../../context/AppContext'
 import { v4 as uuidv4 } from 'uuid'
 
 const AddExpenseForm = () => {
-  const { dispatch } = useContext(AppContext)
-  const [name, setName] = useState('')
-  const [cost, setCost] = useState('')
+  // Access the dispatch function from AppContext
+  const { dispatch } = useContext(AppContext);
 
+  // Define state variables for name and cost
+  const [name, setName] = useState('');
+  const [cost, setCost] = useState('');
+
+  // Handle form submission
   const onSubmit = (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
+    // Create an expense object with unique ID, name, and cost
     const expense = {
       id: uuidv4(),
       name: name,
       cost: parseInt(cost),
-    }
+    };
 
+    // Dispatch the expense object to update the state
     dispatch({
       type: 'ADD_EXPENSE',
       payload: expense,
-    })
+    });
+
+    // Reset the name and cost input fields
     setName('');
     setCost('');
-  }
+  };
 
+  // Render the form
   return (
     <>
       <div>
@@ -60,6 +69,7 @@ const AddExpenseForm = () => {
                 />
               </div>
             </div>
+
             <div className="center">
               <button type="submit" value="Submit" className="btn">
                 Save
@@ -69,7 +79,8 @@ const AddExpenseForm = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
+
 
 export default AddExpenseForm

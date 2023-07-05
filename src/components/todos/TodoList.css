@@ -11,6 +11,8 @@
   
 }
 
+
+
 .todo {
   display: flex;
   margin-top: 10px;
@@ -48,12 +50,31 @@
   border-radius: 6px;
   font-weight: bold;
   color: #000;
+  
 }
 
 .todo button:hover{
   background-color: #2e3e72;
   color: #fff;
   cursor: pointer;
+}
+
+
+.addButton {
+  padding: 10px;
+  border: none;
+  margin-top: 22px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #000;
+  width: 95px;
+}
+
+.addButton:hover{
+  background-color: #2e3e72;
+  color: #fff;
+  cursor: pointer;
+
 }
 
 /* end todo list css */

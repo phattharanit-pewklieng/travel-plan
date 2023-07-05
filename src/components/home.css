@@ -9,16 +9,24 @@ body {
   min-height: 100vh; /* Set body height to at least full viewport height */
 }
 
-
+h1{
+  padding-top: 30px;
+}
 
 /* gallery */
 div.gallery {
-  margin: 10px;
   border: 3px solid #ccc;
-  float: left;
   width: 180px;
-  margin-bottom: 20px;
   border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+div.gallery-container {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.30rem;
+  margin: 10px;
 }
 
 div.gallery:hover {
